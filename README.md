@@ -1,3 +1,3 @@
 # Properties for Lua
 
-I don't always encapsulate fields, but when I do, I keep them under wraps.
+I don't always encapsulate data, but when I do, I keep it under wraps.
