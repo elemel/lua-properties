@@ -1,4 +1,6 @@
-local function new()
+local M = {}
+
+function M.new()
   local getters = {}
   local setters = {}
 
@@ -30,6 +32,4 @@ local function new()
   return class
 end
 
-return {
-  new = new,
-}
+return M
