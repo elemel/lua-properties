@@ -1,8 +1,10 @@
 local Circle = require("example.Circle")
 local Point = require("example.Point")
 
+local unpack = unpack or table.unpack
+
 local point = Point.new(1, 2)
-point.x, point.y = point.y, point.x
+point.y, point.x = unpack(point)
 assert(tostring(point) == "(2, 1)")
 
 local circle = Circle.new(point)
